@@ -87,10 +87,10 @@ void solve(vector<vector<int> > &arr, int i, int j)
 }
 int main(int argc, char const *argv[])
 {
-//#ifndef ONLINE_JUDGE
-//	freopen("input.txt", "r", stdin);
-//	freopen("output.txt", "w", stdout);
-//#endif
+#ifndef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+#endif
 	int n;
 	cout << "Enter the size of board" << endl;
 	cin >> n;
@@ -106,16 +106,6 @@ int main(int argc, char const *argv[])
 			cin >> arr[i][j];
 		}
 	}
-	//cout << arr[0].size();
-	//for debugging !
-	// for (int i = 0; i < n; ++i)
-	// {
-	// 	for (int j = 0; j < n; ++j)
-	// 	{
-	// 		cout << arr[i][j] << " ";
-	// 	}
-	// 	cout << endl;
-	// }
 	solve(arr, 0, 0);
 	return 0;
 }
